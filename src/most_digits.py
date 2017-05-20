@@ -6,7 +6,9 @@ def find_longest(xs):
     return max(xs, key=lambda x: len(str(x)))
 """
 
+
 def find_longest(arr):
+    """Return number with the most digits"""
     num = ''
     for number in arr:
         if len(str(number)) > len(str(num)):

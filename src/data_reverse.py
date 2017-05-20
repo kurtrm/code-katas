@@ -6,6 +6,7 @@ def data_reverse(data):
     return [b for a in xrange(len(data) - 8, -1, -8) for b in data[a:a + 8]]
 """
 
+
 def data_reverse(data):
     """Return an reversed set of binary data in byte sized chunks."""
     new = []

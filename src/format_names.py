@@ -1,4 +1,4 @@
-"""Kata: Your order, please - Return ordered string based on number in word
+"""Kata: Format a list of hashes in a string
 
 #1 Best Practices Solution marceltschoppch & Others
 
