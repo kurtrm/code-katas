@@ -26,4 +26,4 @@ def DNA_strand(dna):
             news.append('G')
         elif letter == 'G':
             news.append('C')
-        return ''.join(news)
+    return ''.join(news)
