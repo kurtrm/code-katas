@@ -1,0 +1,7 @@
+[run]
+source = 
+    src/
+omit = 
+
+[report]
+show_missing = True
