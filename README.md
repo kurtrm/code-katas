@@ -34,3 +34,10 @@
 ** Hit Count(7th kyu)** 2
 **Module**: 'hit_count.py'
 **URL**: [challenge url](https://www.codewars.com/kata/hit-count)
+
+**Top 40 Billionaires**
+**Module**: 'forbes.py'
+**Tests**: 'test_forbes.py'
+**Info**: Supplied with a list of Forbes top 40 billionaires in the world, this script extracts
+the oldest billionaire under 80 years old and the youngest given a valid age. Their names, values,
+and industries are returned. JSON was supplied in the assignment.

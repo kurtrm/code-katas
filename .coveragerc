@@ -1,7 +1,22 @@
 [run]
 source = 
-    src/
+    src/forbes.py
 omit = 
-
+    src/complementary_dna.py
+    src/data_reverse.py
+    src/forbes.json
+    src/format_names.py
+    src/hit_count.py
+    src/Is_Thue_Morse.py
+    src/most_digits.py
+    src/test_complementary_dna.py
+    src/test_data_reverse.py
+    src/test_forbes.py
+    src/test_format_names.py
+    src/test_hit_count.py
+    src/test_Is_Thue_Morse.py
+    src/test_most_digits.py
+    src/test_your_order_please.py
+    src/your_order_please.py
 [report]
 show_missing = True
