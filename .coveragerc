@@ -1,7 +1,8 @@
 [run]
 source = 
-    src/forbes.py
+    src/proper_parenthetics.py
 omit = 
+    src/forbes.py
     src/complementary_dna.py
     src/data_reverse.py
     src/forbes.json
