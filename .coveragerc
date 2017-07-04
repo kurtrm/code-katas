@@ -1,15 +1,18 @@
 [run]
 source = 
-    src/proper_parenthetics.py
+    src/sort_cards.py
 omit = 
-    src/forbes.py
     src/complementary_dna.py
     src/data_reverse.py
+    src/forbes.py
     src/forbes.json
     src/format_names.py
     src/hit_count.py
     src/Is_Thue_Morse.py
+    src/proper_parenthetics.py
+    src/your_order_please.py
     src/most_digits.py
+    src/test_sort_cards.py
     src/test_parenthetics.py
     src/test_complementary_dna.py
     src/test_data_reverse.py
@@ -19,6 +22,5 @@ omit =
     src/test_Is_Thue_Morse.py
     src/test_most_digits.py
     src/test_your_order_please.py
-    src/your_order_please.py
 [report]
 show_missing = True
