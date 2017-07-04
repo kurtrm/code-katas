@@ -10,6 +10,7 @@ omit =
     src/hit_count.py
     src/Is_Thue_Morse.py
     src/most_digits.py
+    src/test_parenthetics.py
     src/test_complementary_dna.py
     src/test_data_reverse.py
     src/test_forbes.py
