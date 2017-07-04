@@ -49,3 +49,10 @@ and industries are returned. JSON was supplied in the assignment.
 without an opening bracket preceding it; returns 0 if balanced ('()');
 or 1 if there is no closing bracket for '('. If there are neither in the whole string,
 returns a string informing the user that does not contain either.
+
+**Sort Cards**
+**Module**: 'sort_cards.py'
+**Tests**: 'test_sort_cards.py'
+**Info**: Given a deck of unordered cards, return the sorted version. The deck may contain
+duplicates. Raises an error if an invalid value is given. Implemented normally and using
+a modified version of a priority queue data structure.
