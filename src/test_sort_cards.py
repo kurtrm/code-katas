@@ -21,3 +21,11 @@ def test_sort_cards(deck):
     """Test sorting of cards."""
     from sort_cards import sort_cards
     assert sort_cards(deck) == solution(deck)
+
+
+@pytest.mark.parametrize('deck', PARAMS_TABLE)
+def test_priorityq_sort(deck):
+    """Test the priority queue sorting of cards."""
+    from sort_cards import CardsPriorityQueue
+    sorted_cards = CardsPriorityQueue(deck)
+    assert sorted_cards.sort() == solution(deck)
