@@ -41,3 +41,11 @@
 **Info**: Supplied with a list of Forbes top 40 billionaires in the world, this script extracts
 the oldest billionaire under 80 years old and the youngest given a valid age. Their names, values,
 and industries are returned. JSON was supplied in the assignment.
+
+**Proper Parenthetics**
+**Module**: 'proper_parenthetics.py'
+**Tests**: 'test_parenthetics.py'
+**Info**: Given a string, returns -1 if there is a ')'
+without an opening bracket preceding it; returns 0 if balanced ('()');
+or 1 if there is no closing bracket for '('. If there are neither in the whole string,
+returns a string informing the user that does not contain either.
