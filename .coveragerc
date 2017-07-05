@@ -1,6 +1,6 @@
 [run]
 source = 
-    src/sort_cards.py
+    src/string_pyramid.py
 omit = 
     src/complementary_dna.py
     src/data_reverse.py
@@ -10,9 +10,11 @@ omit =
     src/hit_count.py
     src/Is_Thue_Morse.py
     src/proper_parenthetics.py
+    src/sort_cards.py
     src/your_order_please.py
     src/most_digits.py
     src/test_sort_cards.py
+    src/test_string_pyramid.py
     src/test_parenthetics.py
     src/test_complementary_dna.py
     src/test_data_reverse.py
