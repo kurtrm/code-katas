@@ -56,3 +56,10 @@ returns a string informing the user that does not contain either.
 **Info**: Given a deck of unordered cards, return the sorted version. The deck may contain
 duplicates. Raises an error if an invalid value is given. Implemented normally and using
 a modified version of a priority queue data structure.
+
+**String Pyramid**
+**Module**: 'string_pyramid.py'
+**Tests**: 'test_string_pyramid.py'
+**Info**: Given a string of characters, construct a virtual pyramid that contains a method
+to view the pyramid from the top, side, and returns the total number of visible characters
+and total number of characters.
