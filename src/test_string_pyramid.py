@@ -1,5 +1,4 @@
 """Test the string pyramid functions. Taken from codewars.com."""
-import pytest
 
 
 def my_count_visible_characters_of_the_pyramid(characters):
@@ -13,7 +12,7 @@ def my_count_all_characters_of_the_pyramid(characters):
 
 
 def test_handles_none():
-    """."""
+    """Ensure the function handles none correctly."""
     from string_pyramid import (
         watch_pyramid_from_above,
         watch_pyramid_from_the_side,
@@ -28,7 +27,7 @@ def test_handles_none():
 
 
 def test_handles_empty_string():
-    """."""
+    """Ensure none can be passed in and validated."""
     from string_pyramid import (
         watch_pyramid_from_above,
         watch_pyramid_from_the_side,
@@ -43,7 +42,7 @@ def test_handles_empty_string():
 
 
 def test_basic_characters():
-    """."""
+    """Test a basic bunch of characters."""
     from string_pyramid import (
         watch_pyramid_from_above,
         watch_pyramid_from_the_side,
@@ -63,7 +62,7 @@ def test_basic_characters():
 
 
 def test_basic_abc():
-    """."""
+    """Test using abc to get a proper pyramid."""
     from string_pyramid import (
         watch_pyramid_from_above,
         watch_pyramid_from_the_side,
@@ -86,7 +85,7 @@ aaaaa''', 35, 25)
 
 
 def test_same_characters():
-    """."""
+    """Test that same characters return valid pyramid."""
     from string_pyramid import (
         watch_pyramid_from_above,
         watch_pyramid_from_the_side,
@@ -109,7 +108,7 @@ aaaaa''', 35, 25)
 
 
 def test_using_54321():
-    """."""
+    """Test that numbers produce a valid pyramid."""
     from string_pyramid import (
         watch_pyramid_from_above,
         watch_pyramid_from_the_side,
