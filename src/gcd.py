@@ -3,6 +3,7 @@ Increase player attack by gcd if monster defense > player attack
 or monster defense if monster defense < player attack.
 """
 
+
 def final_attack_value(x, monster_list):
     """
     """
