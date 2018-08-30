@@ -13,17 +13,13 @@ def mergeTwoLists(l1, l2):
     """
     """
     l1_next, l2_next = l1.next, l2.next
-    if l1_next is None and l2_next is None:
-        l1.next = l2
-        return
     l1.next = l2
-    l2.next = l1_next
+    if l1_next is not None and l2_next is not None:
+        mergeTwoLists(l1_next, l2_next)
     if l1_next is None:
         l2.next = l2_next
-        return
-    if l2_next is None:
-        return
-    mergeTwoLists(l1_next, l2_next)
+    else:
+        l2.next = l1_next
     return l1
 
 
