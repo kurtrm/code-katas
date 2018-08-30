@@ -4,38 +4,51 @@ Merge two sorted lists.
 
 
 class Node:
-    def __init__(self, x):
+    def __init__(self, nxt, x):
         self.val = x
-        self.next = None
+        self.next = nxt
 
 
 def mergeTwoLists(l1, l2):
     """
     """
     l1_next, l2_next = l1.next, l2.next
+    if l1_next is None and l2_next is None:
+        l1.next = l2
+        return
     l1.next = l2
     l2.next = l1_next
-    if l1_next is None and l2_next is None:
-        return l1
     if l1_next is None:
         l2.next = l2_next
-        return l1
-    elif l2_next is None:
-        return l1
-    return mergeTwoLists(l1_next, l2_next)
+        return
+    if l2_next is None:
+        return
+    mergeTwoLists(l1_next, l2_next)
+    return l1
 
 
 def print_merged(ll):
     """
     """
     x = ll
-    while ll is not None:
+    while x is not None:
         print(x.val)
         x = x.next
 
 
 if __name__ == '__main__':
+    # import pdb; pdb.set_trace()
     node1 = Node(Node(Node(Node(Node(None, 5), 4), 3), 2), 1)
     node2 = Node(Node(Node(Node(Node(None, 6), 7), 8), 9), 10)
     ll = mergeTwoLists(node1, node2)
     print_merged(ll)
+    node2 = Node(Node(Node(Node(Node(None, 6), 7), 8), 9), 10)
+    node3 = Node(Node(Node(None, 11), 12), 13)
+    ll2 = mergeTwoLists(node3, node2)
+    print('==========')
+    print_merged(ll2)
+    node3 = Node(Node(Node(Node(Node(None, 6), 7), 8), 9), 10)
+    node2 = Node(Node(Node(None, 11), 12), 13)
+    ll3 = mergeTwoLists(node3, node2)
+    print('==========')
+    print_merged(ll2)
