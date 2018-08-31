@@ -20,7 +20,16 @@ def O_n_squared_summationOfPrimes(primes):
     return prime_sum
 
 
+def summationOfPrimes(primes):
+    """
+    """
+    factors = [digit for digit in range(2, primes + 1)
+               if primes % digit == 0]
+    import pdb; pdb.set_trace()
+    return sum(factors)
+
+
 if __name__ == '__main__':
     x = int(sys.argv[1])
-    phrase = f'Summation of primes of {x} is {O_n_squared_summationOfPrimes(x)}'
+    phrase = f'Summation of primes of {x} is {summationOfPrimes(x)}'
     print(phrase)
