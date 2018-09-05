@@ -23,11 +23,8 @@ def O_n_squared_summationOfPrimes(primes):
 def summationOfPrimes(primes):
     """
     """
-    factors = [digit for digit in range(2, primes + 1)
-               if primes % digit == 0]
-    import pdb; pdb.set_trace()
-    return sum(factors)
-
+    x = range(2, primes + 1)
+    
 
 if __name__ == '__main__':
     x = int(sys.argv[1])
