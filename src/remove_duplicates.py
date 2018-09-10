@@ -21,7 +21,7 @@ def removeDuplicates2(nums):
     for i in range(1, len(nums)):
         try:
             while nums[i] == num:
-                nums.pop(i)
+                del nums[i]
             else:
                 num = nums[i]
         except IndexError:
