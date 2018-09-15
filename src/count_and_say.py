@@ -2,6 +2,7 @@
 Count and say problem.
 """
 from collections import defaultdict, Counter
+import sys
 
 
 # def num_digits(x):
@@ -40,31 +41,29 @@ def countAndSay(nummy):
     """
     """
     num = "1"
-    new_num = ""
-    for i in range(nummy):
+    for i in range(nummy - 1):
+        new_num = ""
         current_digit = None
-        counts = []
+        counts = {}
         for digit in num:
             if current_digit is None:
-                counts.append(digit)
-                counts.append(1)
+                counts[digit] = 1
                 current_digit = digit
-            elif counts[0] == digit:
-                counts[1] += 1
             else:
-                # import pdb; pdb.set_trace()
-                new_num += (counts[0] + str(counts[1]))
-                counts = []
-                counts.append(digit)
-                counts.append(1)
-                current_digit = digit
-        new_num += (counts[0] + str(counts[1]))
+                try:
+                    counts[digit] += 1
+                except KeyError:
+                    new_num += (str(counts[current_digit]) + current_digit)
+                    counts = {}
+                    counts[digit] = 1
+                    current_digit = digit
+        new_num += (str(counts[digit]) + current_digit)
         num = new_num
-        new_num = ""
 
     return num
 
 
 if __name__ == '__main__':
-    x = countAndSay(4)
+    i = sys.argv[1]
+    x = countAndSay(int(i))
     print(x)
