@@ -41,17 +41,24 @@ def countAndSay(nummy):
     """
     num = "1"
     new_num = ""
-    counts = []
     for i in range(nummy):
         current_digit = None
+        counts = []
         for digit in num:
             if current_digit is None:
                 counts.append(digit)
                 counts.append(1)
-            elif counts[0] != digit:
+                current_digit = digit
+            elif counts[0] == digit:
+                counts[1] += 1
+            else:
+                # import pdb; pdb.set_trace()
                 new_num += (counts[0] + str(counts[1]))
                 counts = []
-            import pdb; pdb.set_trace()
+                counts.append(digit)
+                counts.append(1)
+                current_digit = digit
+        new_num += (counts[0] + str(counts[1]))
         num = new_num
         new_num = ""
 
