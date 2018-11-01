@@ -8,9 +8,6 @@ def spiral_matrix(R, C, r0, c0):
     right down left up right down left up ...
     1     1    2    2  3     3    4    4  ...
     c+    r+   c-   r- c+    r+   c-   r- ...
-    0 1 5 10 18 27 39
-    1 4 5 8 9 12
-     3 1 3 1 3
     """
     stp = [r0, c0]
     all_stps = [list(stp)]
